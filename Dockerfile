@@ -12,5 +12,9 @@ RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories
      iptables \
      ipset \
      tmux \
-     tcpdump
+     tcpdump \
+     ipvsadm \
+     openssl \
+     vim \
+     qperf
 ADD .tmux.conf /root/.tmux.conf
