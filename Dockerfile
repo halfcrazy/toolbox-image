@@ -19,3 +19,4 @@ RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories
      iperf
 COPY default.conf /etc/nginx/conf.d/
 COPY .tmux.conf /root/.tmux.conf
+EXPOSE 80
