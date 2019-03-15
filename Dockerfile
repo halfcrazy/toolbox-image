@@ -13,10 +13,17 @@ RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories
      ipset \
      tmux \
      tcpdump \
+     tcpflow \
      ipvsadm \
      openssl \
      vim \
-     iperf
+     iperf \
+     ntop \
+     tini
+
+EXPOSE 80
+
 COPY default.conf /etc/nginx/conf.d/
 COPY .tmux.conf /root/.tmux.conf
-EXPOSE 80
+COPY ./entrypoint.sh /
+ENTRYPOINT ["/sbin/tini", "-g", "--", "/entrypoint.sh"]
