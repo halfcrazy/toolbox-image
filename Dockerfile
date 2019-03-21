@@ -11,6 +11,7 @@ RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories
      net-tools \
      iptables \
      ipset \
+     ethtool \
      tmux \
      tcpdump \
      tcpflow \
