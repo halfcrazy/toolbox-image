@@ -1,9 +1,10 @@
 FROM nginx:alpine
 RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories && \
-     apk add bind-tools \
+     apk add --no-cache bind-tools \
      bash \
      curl \
      wget \
+     strace \
      netcat-openbsd \
      busybox-extras \
      iproute2 \
