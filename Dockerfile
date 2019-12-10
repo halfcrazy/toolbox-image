@@ -12,6 +12,7 @@ RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories
      netcat-openbsd \
      busybox-extras \
      iproute2 \
+     mtr \
      apache2-utils \
      net-tools \
      iptables \
