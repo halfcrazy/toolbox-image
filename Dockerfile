@@ -3,6 +3,7 @@ FROM nginx:alpine
 ENV PORT 80
 
 RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories && \
+     echo "http://mirrors.aliyun.com/alpine/edge/testing" >> /etc/apk/repositories && \
      apk add --no-cache bind-tools \
      bash \
      sed \
@@ -13,6 +14,7 @@ RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories
      busybox-extras \
      iproute2 \
      mtr \
+     hping3 \
      apache2-utils \
      net-tools \
      iptables \
