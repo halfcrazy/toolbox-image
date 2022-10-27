@@ -28,7 +28,9 @@ RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories
      openssl \
      vim \
      iperf \
-     tini
+     tini \
+     py3-pip && \
+     pip3 install scapy -i https://mirrors.aliyun.com/pypi/simple/
 
 EXPOSE 80
 
