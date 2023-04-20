@@ -15,6 +15,7 @@ RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories
      iproute2 \
      mtr \
      hping3 \
+     arping \
      apache2-utils \
      net-tools \
      iptables \
@@ -28,7 +29,10 @@ RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories
      openssl \
      vim \
      iperf \
+     iperf3 \
+     nmap \
      tini \
+     lrzsz \
      py3-pip && \
      pip3 install scapy -i https://mirrors.aliyun.com/pypi/simple/
 
