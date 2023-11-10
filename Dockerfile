@@ -17,6 +17,7 @@ RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories
      hping3 \
      arping \
      apache2-utils \
+     dhclient \
      net-tools \
      iptables \
      ip6tables \
